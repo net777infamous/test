@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<body style="text-align:center;">
+
+    <button onclick="bk()">
+        back	
+    </button> 
+ 
+    <button onclick="gg()">
+        home	
+    </button>
+
+    <button onclick="fw()">
+        forward	
+    </button>
+    <iframe id="0frame" src="https://google.com/" 
+        style="height: 850px; width: 1680px;">
+    </iframe>
+    <button onclick="bk1()">
+        back	
+    </button> 
+ 
+    <button onclick="gg1()">
+        home	
+    </button>
+
+    <button onclick="fw1()">
+        forward	
+    </button>
+    <iframe id="1frame" src="https://google.com/" 
+        style="height: 700px; width: 1680px;">
+    </iframe>
+
+    <button onclick="bk2()">
+        back	
+    </button> 
+ 
+    <button onclick="gg2()">
+        home	
+    </button>
+
+    <button onclick="fw2()">
+        forward	
+    </button>
+    <iframe id="3frame" src="https://google.com/" 
+        style="height: 850px; width: 1680px;">
+    </iframe>
+
+    <script>
+        function bk() {
+            iframe.contentWindow.history.go(-1);
+        }
+    </script>
+    <script>
+        function gg() {
+            document.getElementById("0frame").src
+                = "https://google.com/";
+        };
+    </script>
+    <script>
+        function fw() {
+            iframe.contentWindow.history.go(1);
+        }
+    </script>
+
+    <script>
+        function gg1() {
+            document.getElementById("1frame").src
+                = "https://google.com/";
+        }
+    </script>
+    <script>
+        function bk1() {
+            iframe.contentWindow.history.go(-1);
+        }
+    </script>
+    <script>
+        function fw1() {
+            iframe.contentWindow.history.go(1);
+        }
+    </script>
+
+    <script>
+        function gg2() {
+            document.getElementById("3frame").src
+                = "https://google.com/";
+        }
+    </script>
+    <script>
+        function bk2() {
+            iframe.contentWindow.history.go(-1);
+        }
+    </script>
+    <script>
+        function fw2() {
+            iframe.contentWindow.history.go(1);
+        }
+    </script>
+
+</body>
+  
+</html>
